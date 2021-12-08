@@ -1,5 +1,5 @@
 import {  BrowserRouter as Router } from 'react-router-dom';
-import classes from '../../App.css'
+import classes from '../card.module.css'
 import Appleimage from './Apple.png'
 
 const appleCard = ()=>{

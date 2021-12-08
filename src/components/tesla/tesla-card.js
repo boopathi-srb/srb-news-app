@@ -1,5 +1,5 @@
 import {BrowserRouter as Router} from 'react-router-dom';
-import classes from '../../App.css'
+import classes from '../news.module.css'
 import teslaimage from './tesla.png'
 
 

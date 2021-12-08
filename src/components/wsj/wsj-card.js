@@ -1,6 +1,6 @@
 import {  BrowserRouter as Router } from 'react-router-dom';
 
-import classes from '../../App.css'
+import classes from '../card.module.css'
 import wsjimage from './wsj.png'
 
 const wsjCard = ()=>{
