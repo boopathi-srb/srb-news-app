@@ -1,0 +1,170 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.topbar{
+  display: flex;
+  background: #7bee4d ;
+  width: 100%;
+  height: 60px;
+  text-align: right;
+  align-items: right;
+  justify-content: space-between;
+  z-index: 999;
+  position: fixed;
+}
+.topbar > img{
+  max-width: 60px;
+  align-items: left;
+  position:absolute;
+  left: 2%;
+  top: -2;
+}
+.rightside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  margin-right: 20px;
+  z-index: 999;
+}
+.topbar_links a {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin: 0 1rem ;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+.topbar_links a::before{
+  content: " ";
+  position: absolute;
+  bottom: -0.5em;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  height: 5px;
+  width: 100%;
+  border-radius: 2px;
+  background:orangered;
+  transform: scale(0,0);
+  transition: transform 300ms ease-in-out;
+  
+}
+.topbar_links a:hover{ 
+  cursor: pointer;
+  border-radius: 2rem;
+}
+.topbar_links a:hover::before{
+  transform: scale(1,1);
+  transform-origin: center;
+}
+.toggle_button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1.5rem;
+  max-width: 150px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  border-radius: 5px;
+  border: none;
+  background-color: #7bee4d;
+  display: none;
+}
+
+
+@media only screen and (max-width:768px){
+  .logo{
+    max-width: 50px;
+  }
+  .topbar{
+    min-height: 60px;
+    width: 100%;
+  }
+  nav {
+    background: #7bee4d;
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: max-content;
+    margin-top: 40px;
+    margin-right: 20px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    text-align: left;  
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 300ms ease-in-out;
+    z-index: 999;
+  }
+  
+  .topbar_links> a {
+    text-decoration: none;
+    display: flex;
+    font-size: 0.9rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    padding: 7px 0px;
+    
+  }
+  .topbar_links a::before{
+    bottom: 0.3em; 
+    height: 1.5px;
+  }
+
+  .toggle_button:checked ~ nav{
+    transform: scale(1,1);
+    z-index: 0;
+  }
+ 
+  .toggle_button_label{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    height: 100% ;
+    display: flex;
+    align-items: center;
+  }
+  .toggle_button_label span,
+  .toggle_button_label span::after,
+  .toggle_button_label span::before{
+    display: block;
+    background:black;
+    width: 1.5em;
+    height: 0.2em;
+    border-radius: 2px;
+    position: relative;
+    
+  }
+  .toggle_button_label span::after,
+  .toggle_button_label span::before{
+    content: " ";
+    position: absolute;
+  }
+  .toggle_button_label span::before{
+    bottom: 7px;
+  }
+  .toggle_button_label span::after{
+    top: 7px;
+  }
+}

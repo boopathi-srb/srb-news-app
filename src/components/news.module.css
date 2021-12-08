@@ -1,0 +1,161 @@
+.body{
+  box-sizing: border-box;
+  display: grid;
+  margin-top: 5%;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.greeting{
+  margin-top: 90px;
+  font-size: 2rem;
+  color: rgb(19, 19, 18);
+}
+.wrapper{
+  width: 90ch;
+  height: 50vh;
+  background: rgba(255, 254, 254, 0.55);
+  border-radius: 20px 50px 20px 50px;
+  box-shadow: 4px 2px 20px  rgb(10, 10, 10); 
+  margin-top: 50px;
+  padding: 5rem 1rem;
+  text-align: center;
+  /* display: block; */
+  position: relative;
+  z-index: -1;
+}
+.wrapper::after{
+  content: '';
+  background-color: #7bee4d;
+  height: 0em;
+  width: 0em;
+  position: absolute;
+  bottom: -19%;
+  right: -9%;
+  border-radius: 50%;
+  z-index: -2;
+}
+.wrapper::before{
+  content: '';
+  background-color: #7bee4d;
+  height: 0em;
+  width: 0em;
+  position: absolute;
+  top: -19%;
+  left: -9%;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.wrapper>img{
+  width: 20rem;
+  height: 13rem;
+  padding: 1rem 1rem; 
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  border-radius: 30px 50px 30px 50px;
+}
+.title{
+  position: absolute;
+  color: #141211;
+  font-size: 1.2em;
+  top: 3em;
+  left: 20em;
+  right: 1em;
+  text-align: left;
+  padding: 1rem 1rem;
+  
+}
+.description{
+  font-size: 0.9em;
+  position: absolute;
+  padding: 1em 1em;
+  text-align: left;
+  top: 15em;
+  bottom: 1em;
+ 
+}
+
+.Button_card{
+  background-color: #7bee4d;
+  font-size: 0.9rem;
+  border-radius: 0.8em;
+  padding: 0.8em;
+  border: none;
+  width: 100px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px 10px ;
+  font-family: Roboto;
+  font-weight: 600;
+  opacity: 1;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 0;
+}
+
+  
+
+@media(hover){
+
+  .Button_card{
+    transition: transform 400ms ease;
+  }
+  }
+  .wrapper:hover .Button_card{
+  opacity: 1;
+}
+.Button_card:hover{
+  background-color: lavender;
+}
+@media only screen and (max-width: 768px){
+  .greeting{
+    font-size: 1.5rem; 
+  }
+  .wrapper{
+    width: 30ch;
+    height: 50vh;
+    /* background: rgba(226, 222, 222, 0.7); */
+    backdrop-filter: blur(50px);
+    padding: 2rem .5rem;
+    overflow-x: scroll;
+  }
+  .wrapper::after, .wrapper::before{
+    height: 0em;
+    width: 0em;
+  }
+  .wrapper::before{
+    top: 80%;
+    left: 10%;
+  }
+  .wrapper::after{
+    top: 30%;
+    left: 70%;
+  }
+  .wrapper>img{
+    width: 9rem;
+    height: 7rem;
+    padding: 0.5rem;
+    border-radius:20px 35px 20px 35px;
+  }
+  .title{
+    font-size: 0.8rem;
+    top: 0.5em;
+    left: 13em;
+    padding: 0.5em 0.4em;
+  }
+  .description{
+    font-size: 0.7em;
+    padding: 0em 01.5em;
+    top: 15em;
+    left: 0em;
+  }
+  .Button_card{
+    width: 60px;
+    font-size: 0.55rem;
+    padding: 0.7em;
+  }
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Josefin+Sans:wght@500&display=swap');
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.App{
+  display: grid;
+  /* flex-direction: column;  */
+  /* background-color: #daf0d1; */
+}
+.body{
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  text-align: center;
+}
+header{
+  position: fixed;
+  z-index: 999;
+}
+/* footer{
+  position: fixed;
+  margin-bottom: 0;
+} */
+
+
