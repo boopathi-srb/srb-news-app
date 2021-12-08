@@ -1,5 +1,5 @@
 import {  BrowserRouter as Router } from 'react-router-dom';
-import classes from '../news.module.css'
+import classes from '../../App.css'
 import indiaimage from './india.png'
 import React from 'react';
 

@@ -1,6 +1,6 @@
 import {BrowserRouter as Router } from 'react-router-dom';
 
-import classes from '../news.module.css'
+import classes from '../../App.css'
 import techcrunchimage from './Techcrunch.png'
 
 const techcrunchCard = ()=>{

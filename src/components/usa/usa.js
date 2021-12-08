@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import classes from '../news.module.css';
+import classes from '../../App.css';
 
 function render1(){
   return []

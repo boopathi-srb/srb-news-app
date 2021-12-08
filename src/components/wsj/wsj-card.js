@@ -1,6 +1,6 @@
 import {  BrowserRouter as Router } from 'react-router-dom';
 
-import classes from '../news.module.css'
+import classes from '../../App.css'
 import wsjimage from './wsj.png'
 
 const wsjCard = ()=>{
