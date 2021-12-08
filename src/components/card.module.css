@@ -4,7 +4,7 @@
   max-height: 53vh;
   background: rgba(255, 254, 254, 0.55);
   border-radius: 20px 50px 20px 50px;
-  /* box-shadow: 4px 2px 40px  rgb(10, 10, 10); npm */
+  box-shadow: 4px 2px 20px  rgb(10, 10, 10); 
   margin-top: 50px;
   padding: 5rem 0em;
   text-align: center;
@@ -174,3 +174,4 @@
   }
     
 } 
+
