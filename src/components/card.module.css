@@ -162,11 +162,6 @@
     font-weight: 900;
   }
   
-  /* .card::after .card::before{
-    z-index: -2;  
-    width: 6em;
-    height: 6em; 
-  } */
   .Button{
     /* margin-top: 2px; */
     width: 36ch;
